@@ -1,0 +1,25 @@
+.scroll-content{
+  background: #f5f5f5; 
+}
+
+ion-list{
+  box-shadow: 0px 0px 4px #e8e7e7;
+}
+[payment-card]{
+  border-radius: 10px !important;
+  ion-list{
+    box-shadow: unset !important;
+  }
+  p{
+    font-size: 10px !important;
+  }
+  ion-input{
+    border: 1px solid #c5c3c3;
+    border-radius: 5px;
+    input{
+      margin: 7px;
+    }
+   
+    
+  }
+}

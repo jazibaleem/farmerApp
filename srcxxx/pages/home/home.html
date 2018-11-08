@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      New Farmer Registration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <input type="text" id="fullName" placeholder="Full Name" class="form-control">
+    <input type="text" id="farmLocation" placeholder="Farm Location" class="form-control">
+    <input type="number" id="Number_of_weekly_trays" placeholder="Number of weekly trays" class="form-control">
+    <Label>Do you have a permanent warehouse?</Label> <br>
+    <input type="radio" name="warehouse" id="warehouse"> Yes
+    <input type="radio" name="warehouse" id="warehouse" checked> No<br>
+    <div class="">
+      <label for="numOf">How many (number)?</label>
+      <input type="number" name="numOf" id="numOf" class="form-control">
+    </div>
+
+    <Label>Do you need a multiple packing?</Label> <br>
+    <input type="radio" name="packing" id="packing"> Yes
+    <input type="radio" name="packing" id="packing" checked> No<br>
+    <div class="">
+      <label for="numOfPacking">How many (number)?</label><br>
+      <input type="number" placeholder="How many" name="numOfPacking" id="numOfPacking" class="form-control">
+      <input type="text" name="comment" placeholder="Comment" class="form-control" />
+    </div>
+
+    <input type="text" class="form-control" name="point_of_contact_Name" id="point_of_contact_Name" placeholder="Point of contact Name">
+    <input type="text" class="form-control" name="telephone_number" id="telephone_number" placeholder="Telephone number">
+
+    <ion-list radio-group>
+      <ion-list-header>
+        Payment Method
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Credit Card</ion-label>
+        <ion-radio checked="true" value="Credit Card"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Bank details</ion-label>
+        <ion-radio value="rust"></ion-radio>
+      </ion-item>
+
+    </ion-list>
+    
+  </form>
+</ion-content>
