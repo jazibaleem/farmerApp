@@ -14,5 +14,61 @@
 
 
 <ion-content padding>
+  <ion-list>
+  
+    <ion-item>
+      <ion-input type="text" placeholder="Name of Beneficiary / Supermarket name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input type="text" placeholder="Product type" ></ion-input>
+    </ion-item>
 
+
+    <ion-item> 
+      <ion-input type="number" placeholder="Quantity of trays"  ></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-label stacked>Point of contact name </ion-label>
+  <ion-item>
+    <ion-label color="primary">1</ion-label>
+    <ion-input type="number" text-right placeholder="Number of trays"></ion-input>
+    <ion-input type="text" text-right placeholder="Beneficiary"></ion-input>
+  </ion-item>
+  <ion-item *ngFor="let att of anArray; let idx = index">
+    <ion-label color="primary">{{att.label}}{{idx+2}}</ion-label>
+    <ion-input type="number" text-right [(ngModel)]="anArray[idx].value" placeholder="Number of trays"></ion-input>
+    <ion-input type="text" text-right [(ngModel)]="anArray[idx].value" placeholder="Beneficiary"></ion-input>
+  </ion-item>
+  <button ion-button (click)="Add()" color="secondary">Add More</button>
+  <button ion-button (click)="Remove()" color="danger">Remove</button>  
+
+  <ion-list>
+    <ion-label>Time of load</ion-label>
+    <ion-item>
+      <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="timeOfLoad"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+  
+    <ion-item>
+      <ion-input type="text" placeholder="Price"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input type="text" placeholder="KOSHER certificate"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Do you need cold truck</ion-label>
+      <ion-toggle [(ngModel)]="needColdTruck"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="Payment"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <button ion-button block>Submit</button>
 </ion-content>

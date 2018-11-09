@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DeliveryRequestPage page.
+ * Generated class for the NewDeliveryPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,24 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-delivery-request',
-  templateUrl: 'delivery-request.html',
+  selector: 'page-new-delivery',
+  templateUrl: 'new-delivery.html',
 })
-export class DeliveryRequestPage {
- public anArray:any=[];
+export class NewDeliveryPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DeliveryRequestPage');
-  }
-
-  Add() {
-    this.anArray.push({ 'value': '' });
-  }
-
-  Remove() {
-    this.anArray.pop({ 'value': '' });
+    console.log('ionViewDidLoad NewDeliveryPage');
   }
 
 }

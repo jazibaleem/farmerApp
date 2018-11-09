@@ -17,6 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { NetworkEngineProvider } from '../providers/network-engine/network-engine';
 
 import { HttpClientModule} from '@angular/common/http';
+import { LoginPage } from '../pages/login/login';
+import { NewDeliveryPage } from '../pages/new-delivery/new-delivery';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HttpClientModule} from '@angular/common/http';
     TabsPage,
     FormerDetailsPage,
     DeliveryRequestPage,
-    TrucksPage
+    TrucksPage,
+    LoginPage,
+    NewDeliveryPage
   ],
   imports: [
     BrowserModule,HttpClientModule,
@@ -42,7 +46,9 @@ import { HttpClientModule} from '@angular/common/http';
     TabsPage,
     FormerDetailsPage,
     DeliveryRequestPage,
-    TrucksPage
+    TrucksPage,
+    LoginPage,
+    NewDeliveryPage
   ],
   providers: [
     StatusBar,

@@ -15,7 +15,7 @@ export class TabsPage {
   // tab1Root = HomePage;
   // tab2Root = AboutPage;
   // tab3Root = ContactPage;
-  tab4Root = FormerDetailsPage;
+  // tab4Root = FormerDetailsPage;
   tab5Root = DeliveryRequestPage;
   tab6Root = TrucksPage;
 
